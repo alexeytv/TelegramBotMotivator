@@ -1,2 +1,2 @@
-gialog
+dialog
 telebot
