@@ -30,9 +30,10 @@ def handlerization(bot):
 
     # Show_shedule-command
     @bot.message_handler(commands=['show_shed'])
-    bot.send_message(message.chat.id, answers.shedule)
+    def show_shed(message):
+        bot.send_message(message.chat.id, answers.shedule)
 #    def show_event(message):
- #       if not events: 
+#       if not events: 
 #            bot.send_message(message.chat.id, answers.show_nothing)
 #        else:
 #            bot.send_message(message.chat.id, answers.show_events)
