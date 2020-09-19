@@ -27,7 +27,18 @@ def handlerization(bot):
             bot.send_message(message.chat.id, answers.show_events)
             result = '\n'.join(event.get_event_string() for event in events)
             bot.send_message(message.chat.id, result)
-    
+
+    # Show_shedule-command
+    @bot.message_handler(commands=['show_shed'])
+    bot.send_message(message.chat.id, answers.shedule)
+#    def show_event(message):
+ #       if not events: 
+#            bot.send_message(message.chat.id, answers.show_nothing)
+#        else:
+#            bot.send_message(message.chat.id, answers.show_events)
+#            result = '\n'.join(event.get_event_string() for event in events)
+#            bot.send_message(message.chat.id, result)
+
     @bot.message_handler(commands=['add_event'])
     def add_event(message):
         cur_chat_id = message.chat.id
