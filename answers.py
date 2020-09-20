@@ -42,8 +42,14 @@ ask_edit_number = \
 ask_edit_name = \
 '''Введи новое название мероприятия:'''
 
-shedule = \
-'''aaaaa'''
+shedule1 = \
+'''1. История в 533
+2. Английский в 533
+3. Русский в 533
+4. Литература в 533
+5. История в 538
+6. Немецкий в 533
+7. Физ-ра'''
 
 def make_event_message(event_list):
     result = '\n'.join(event.name for event in event_list)
