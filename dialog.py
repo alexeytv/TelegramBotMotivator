@@ -29,9 +29,9 @@ def handlerization(bot):
             bot.send_message(message.chat.id, result)
 
     # Show_shedule-command
-    @bot.message_handler(commands=['show_shed'])
-    def show_shed(message):
-        bot.send_message(message.chat.id, answers.shedule)
+    @bot.message_handler(commands=['monday'])
+    def monday(message):
+        bot.send_message(message.chat.id, answers.shedule1)
 #    def show_event(message):
 #       if not events: 
 #            bot.send_message(message.chat.id, answers.show_nothing)
