@@ -32,6 +32,22 @@ def handlerization(bot):
     @bot.message_handler(commands=['monday'])
     def monday(message):
         bot.send_message(message.chat.id, answers.shedule1)
+
+    @bot.message_handler(commands=['tuesday'])
+    def tuesday(message):
+        bot.send_message(message.chat.id, answers.shedule2)
+
+    @bot.message_handler(commands=['wednesday'])
+    def wednesday(message):
+        bot.send_message(message.chat.id, answers.shedule3)
+
+    @bot.message_handler(commands=['thursday'])
+    def thursday(message):
+        bot.send_message(message.chat.id, answers.shedule4)
+
+    @bot.message_handler(commands=['friday'])
+    def friday(message):
+        bot.send_message(message.chat.id, answers.shedule5)
 #    def show_event(message):
 #       if not events: 
 #            bot.send_message(message.chat.id, answers.show_nothing)
